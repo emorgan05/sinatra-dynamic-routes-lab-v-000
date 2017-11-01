@@ -6,4 +6,8 @@ class App < Sinatra::Base
     "Your name must be #{@name}!"
   end
 
+  get '/square/:number' do
+    @square = params[:number].to_i ** 2
+    "The square of #{params[:number]} is #{@square}"
+  end
 end
