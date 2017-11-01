@@ -17,6 +17,5 @@ class App < Sinatra::Base
     @number.times do |x|
       "My catchphrase is #{@phrase}!"
     end
-    binding.pry
   end
 end
