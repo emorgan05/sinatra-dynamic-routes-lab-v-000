@@ -15,7 +15,7 @@ class App < Sinatra::Base
     @num = params[:number].to_i
     @phrase = params[:phrase]
     @num.times do |x|
-      puts "#{@phrase}!"
+      "My catchphrase is #{@phrase}!"
     end
   end
 end
